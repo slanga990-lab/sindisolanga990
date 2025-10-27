@@ -1,0 +1,25 @@
+yrruygrieu uehtoirtueriu  rhrruh
+Link to Mira Board: https://miro.com/app/board/uXjVJ0MWXbk=/?share_link_id=70398279852
+
+Syntax for Bright Coffe Shop below:
+
+SELECT transaction_date,
+DAYNAME(transaction_date)AS DAY_NAME,
+CASE
+    WHEN DAYNAME(transaction_date)IN ('sat','sun')THEN 'WEEKEND'
+    ELSE 'WEEKDAY'END AS Day_classification,
+    MONTHNAME(transaction_date)AS MONTH_NAME,
+CASE 
+   WHEN transaction_time BETWEEN '06:00:00' AND '11:59:59' THEN 'MORNING'
+   WHEN transaction_time BETWEEN '12:00:00' AND '16:59:59' THEN 'AFTERNOON'
+   WHEN transaction_time BETWEEN '17:00:00' AND '21:00:00' THEN 'EVENING'
+   END AS time_bucket,
+   HOUR(transaction_time)AS hour_of_day,
+   store_location,
+   product_detail,
+   product_category,
+   transaction_qty,
+   transaction_qty*unit_price AS Revenue
+  FROM "BRIGHT_COFFEE"."PUBLIC"."SHOP"
+   
+   
