@@ -8,3 +8,9 @@ TOOLS USED FOR THE CASE STUDY
 -SNOWFLAKE AND DATABRICKS (for SQL coding)
 -EXCEL (for pivot and graphs)
 -CANVA (for data presentation)
+
+below is the link to MIRO BOARD
+
+https://miro.com/app/board/uXjVJ0MWXbk=/?share_link_id=99088428721
+
+
